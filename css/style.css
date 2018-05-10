@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css?family=Candal|Covered+By+Your+Grace|Nunito');
+
+.row {
+  margin: 0;
+}
+
+.col-md-4 {
+  float: left;
+  clear: both;
+}
+
+.col-md-7 {
+  float: left;
+}
+
+.col-md-4 img {
+  right: 0;
+  top: -150px;
+  position: absolute;
+}
+}
+
+.col-lg-7 {
+  float: left
+}
+
+body {
+  font-family: Nunito;
+}
+
+.content h3 {
+  font-weight: 700;
+  color: #5f0086;
+}
+
+.content h3.FAQ {
+  color: orange;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.content h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navbar {
+  background: black;
+  opacity: .9;
+  font-family: Covered By Your Grace;
+  color: white;
+  font-size: 26px;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+}
+
+button {
+  transition: all .4s;
+}
+
+.navbar button {
+  border: none;
+  padding: 0px 10px;
+  border-radius: 5px;
+}
+
+.navbar button:hover {
+  background: blue;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+.jumbotron {
+  padding-top: 150px;
+  margin-bottom: 0px;
+  position: relative;
+  color: white;
+  text-align: center;
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/721267/bluesplash.png');
+  background-position: bottom;
+  background-size: cover;
+}
+
+.jumbotron h1 {
+    font-family: Covered By Your Grace;
+    font-size: 60px;
+}
+
+.jumbotron h3 {
+    font-family: Candal;
+    display: inline-block;
+}
+
+.jumbotron button {
+    font-family: Candal;
+    background: #ff2266;
+    border: none;
+    color: white;
+    margin-left: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline;
+}
+
+.jumbotron button:hover {
+    background: orange;
+    cursor: pointer;
+}
+
+.row {
+  padding: 50px 0;
+}
+
+.cta {
+  background: radial-gradient(circle, #ff7800 1%, #ff2266 90%);
+  text-align: center;
+  font-family: Candal;
+  color: white;
+}
+
+.cta h5 {
+  margin-top: 30px;
+}
+
+.signup {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/721267/purplesplash.png);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-family: candal;
+    text-align: center;
+}
+
+.mentor-wrapper {
+  width: calc(33% - 60px);
+  margin: 20px;
+  display: inline-block;
+}
+
+@media screen and (max-width: 991px) {
+  
+  .mentor-wrapper {
+  width: calc(50% - 40px);
+  margin: 10px;
+  display: inline-block;
+}
+  
+
+  
+  .jumbotron h1 {
+    font-size: 36px;
+}
+    .jumbotron h3 {
+    font-size: 18px;
+      display: block;
+      margin-bottom: 30px;
+}
+  
+  
+}
+
+@media screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  
+    .desktop {
+    display: none;
+  }
+  
+    .jumbotron {
+    overflow: hidden;
+    padding-bottom: 150px;
+  }
+  
+  .mobile {
+    display: inline-block;
+  }
+  
+  .mentor-wrapper {
+  width: calc(100% - 60px);
+  margin: 30px;
+  display: inline-block;
+}
+  
+  .jumbotron img { 
+    position: absolute;
+    width: 300px;
+    bottom: -150px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+
+.img-wrapper {
+  position: relative;
+  
+}
+
+.mentor-name {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  width: 80%;
+  font-size: 18px;
+  background: black;
+  padding: 10px 12px;
+  border-radius: 3px;
+  text-align: center;
+  left: 0;
+  bottom: 20px;
+  right: 0;
+  margin: auto  
+}
+
+.mentor-wrapper p {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.mentor {
+  border-radius: 50%; 
+  padding: 20px;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+li {
+  padding-left: 1.3em;
+  margin: 10px;
+}
+li:before {
+  content: "\f0e7"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -1.3em; /* same as padding-left set on li */
+  width: 1.3em; /* same as padding-left set on li */
+}
