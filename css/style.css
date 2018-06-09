@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Candal|Covered+By+Your+Grace|Nunito');
+@import url('https://fonts.googleapis.com/css?family=Candal|Covered+By+Your+Grace|Nunito|Gloria+Hallelujah');
 
 .row {
   margin: 0;
@@ -16,6 +16,7 @@
 .col-md-4 img {
   right: 0;
   top: -150px;
+  width: 569px;
   position: absolute;
 }
 }
@@ -28,13 +29,19 @@ body {
   font-family: Nunito;
 }
 
+@media (min-width: 1200px) {
+  .container {
+      max-width: 1080px;
+  }
+}
+
 .content {
-  max-width: 780px;
+  padding: 0 30px;
 }
 
 .content h3 {
   font-weight: 700;
-  color: #5f0086;
+  color: #4d139c;
 }
 
 .content h3.FAQ {
@@ -57,6 +64,10 @@ body {
   position: fixed;
   width: 100%;
   z-index: 10000;
+}
+
+.schedule-img {
+  max-width: 100%;
 }
 
 button {
@@ -178,6 +189,15 @@ button {
     display: none;
   }
 
+  .friday-info {
+    width: initial !important;
+  }
+
+  .friday-info > div {
+    display: block !important;
+    float: none !important;
+  }
+
     .jumbotron {
     overflow: hidden;
     padding-bottom: 150px;
@@ -196,9 +216,9 @@ button {
   .jumbotron img {
     position: absolute;
     width: 300px;
-    bottom: -150px;
+    bottom: -181px;
     left: 0;
-    right: 0;
+    right: -20px;
     margin: 0 auto;
   }
 }
@@ -245,3 +265,73 @@ li {
   margin: 10px;
 }
 li i {margin-right: 5px; }
+
+.friday-info {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.friday-info .title {
+  display: inline-block;
+}
+
+.deets {
+  float: right;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.deets p {
+  margin-bottom: .5rem;
+}
+
+.deets .emphasis {
+  font-family: Gloria Hallelujah;
+  font-size: 20px;
+}
+
+.friday-info h3 {
+  font-family: Gloria Hallelujah;
+  color: #e75b82;
+  margin-top: 35px;
+}
+
+.schedule-info h3 {
+  font-family: Gloria Hallelujah;
+  color: #1130a1;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.schedule-info {
+  width: 100%;
+}
+
+.schedule-info p {
+  text-align: center;
+}
+
+.schedule-info p img {
+  width: 60px;
+  margin-right: 15px;
+}
+
+.day {
+  border: 1px dashed rgb(173, 51, 221);
+  border-radius: 5px;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.schedule-info ul {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.bulletpoints span {
+  display: block;
+  margin: 10px 0;
+}
+
