@@ -12,6 +12,184 @@
 <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
 
 <link rel="stylesheet" href="css/style.css">
+<style type="text/css">/* Layout */
+  .ck_form.ck_minimal {
+  /* divider image */
+  background: #f9f9f9;
+  font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+  line-height: 1.5em;
+  overflow: hidden;
+  color: #666;
+  font-size: 16px;
+  border: solid 1px #d1d1d1;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  clear: both;
+  margin: 20px 0px;
+  text-align: center;
+}
+
+
+.ck_form.ck_minimal h3.ck_form_title {
+  text-align: center;
+  margin: 0px 0px 10px;
+  font-size: 28px;
+}
+
+.ck_form.ck_minimal h4 {
+  text-align: center;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: normal;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+.ck_form.ck_minimal p {
+  padding: 0px;
+}
+
+.ck_form, .ck_form * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.ck_form.ck_minimal .ck_form_fields {
+  width: 100%;
+  float: left;
+  padding: 5%;
+}
+/* Form fields */
+
+.ck_errorArea {
+  display: none; /* temporary */
+}
+
+#ck_success_msg {
+  padding: 10px 10px 0px;
+  border: solid 1px #ddd;
+  background: #eee;
+}
+
+.ck_form.ck_minimal input[type="text"], .ck_form.ck_minimal input[type="email"] {
+  font-size: 18px;
+  padding: 10px 8px;
+  width: 68%;
+  border: 1px solid #d6d6d6; /* stroke */
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px; /* border radius */
+  background-color: #fff; /* layer fill content */
+  margin-bottom: 5px;
+  height: auto;
+  float: left;
+  margin: 0px;
+  margin-right: 2%;
+  height: 42px;
+}
+
+.ck_form input[type="text"]:focus, .ck_form input[type="email"]:focus {
+  outline: none;
+  border-color: #aaa;
+}
+
+.ck_form.ck_minimal .ck_subscribe_button {
+    width: 100%;
+    color: #fff;
+    margin: 0px;
+    padding:  11px 0px;
+    font-size: 18px;
+    background: #0d6db8;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px; /* border radius */
+    cursor: pointer;
+    border: none;
+    text-shadow: none;
+    width: 30%;
+    float: left;
+    height: 42px;
+  }
+
+
+.ck_form.ck_minimal .ck_guarantee {
+  color: #626262;
+  font-size: 12px;
+  text-align: center;
+  padding: 15px 0px 0px;
+  display: block;
+  clear: both;
+}
+.ck_form .ck_powered_by {
+  display: block;
+  color: #aaa;
+  font-size: 12px;
+}
+
+.ck_form .ck_powered_by:hover {
+  display: block;
+  color: #444;
+}
+
+.ck_converted_content {
+  display: none;
+  padding: 5%;
+  background: #fff;
+}
+
+.ck_form.ck_minimal.width400 .ck_subscribe_button, .ck_form.ck_minimal.width400 input[type="email"] {
+    width: 100%;
+    float: none;
+    margin-top: 5px;
+  }
+
+.ck_slide_up, .ck_modal, .ck_slide_up .ck_minimal, .ck_modal .ck_minimal  {
+  min-width: 400px;
+}
+
+.page .ck_form.ck_minimal {
+  margin: 50px auto;
+  max-width: 600px;
+}
+
+
+/* v6 */
+.ck_slide_up.ck_form_v6, .ck_modal.ck_form_v6, .ck_slide_up.ck_form_v6 .ck_minimal, .ck_modal.ck_form_v6 .ck_minimal {
+  min-width: 0 !important;
+}
+
+@media all and (min-width: 801px) {
+  .ck_modal.ck_form_v6 .ck_form.ck_minimal {
+    margin-left: -300px;
+    width: 600px;
+  }
+}
+
+.ck_modal.ck_form_v6 .ck_minimal .ck_subscribe_form {
+  padding-top: 20px;
+}
+
+.ck_slide_up.ck_form_v6 .ck_minimal .ck_subscribe_form {
+  padding-top: 10px;
+}
+
+.ck_form_v6 #ck_success_msg {
+  margin-top: 15px;
+  padding: 0px 10px;
+}
+
+.ck_slide_up.ck_form_v6 .ck_minimal + .ck_close_link {
+  top: 5px;
+}
+.ck_slide_up.ck_form_v6 .ck_minimal h3.ck_form_title {
+  margin-top: 5px;
+}
+
+</style>
+
 
 
 </head>
@@ -120,7 +298,46 @@
     </div><div class="row signup">
   <div class="container">
     <h2>2 more mentors to be announced!</h2>
-    <h5>Sign up form will go here</h5>
+    <script src="https://assets.convertkit.com/assets/CKJS4.js?v=21"></script>
+    <div class="ck_form_container ck_inline" data-ck-version="7">
+      <div class="ck_form ck_minimal">
+        <div class="ck_form_fields">
+          <h3 class="ck_form_title">Find out when we announce the next mentor</h3>
+          <div class="ck_description">
+            <p>Plus get reminders about Finish Up Weekend.</p>
+          </div>
+
+          <div id="ck_success_msg"  style="display:none;">
+            <p>Success!</p>
+          </div>
+
+          <!--  Form starts here  -->
+          <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/410085/subscribe" data-remote="true">
+            <input type="hidden" value="{&quot;form_style&quot;:&quot;minimal&quot;}" id="ck_form_options">
+            <input type="hidden" name="id" value="410085" id="landing_page_id">
+            <input type="hidden" name="ck_form_recaptcha" value="" id="ck_form_recaptcha">
+            <div class="ck_errorArea">
+              <div id="ck_error_msg" style="display:none">
+                <p>There was an error submitting your subscription. Please try again.</p>
+              </div>
+            </div>
+            <div class="ck_control_group ck_email_field_group">
+              <label class="ck_label" for="ck_emailField" style="display: none">Email Address</label>
+              <input type="email" name="email" class="ck_email_address" id="ck_emailField" placeholder="Email Address" required>
+            </div>
+            <div class="ck_control_group ck_captcha2_h_field_group ck-captcha2-h" style="position: absolute !important;left: -999em !important;">
+              <input type="text" name="captcha2_h" class="ck-captcha2-h" id="ck_captcha2_h" placeholder="We use this field to detect spam bots. If you fill this in, you will be marked as a spammer.">
+            </div>
+            <button class="subscribe_button ck_subscribe_button btn fields" id="ck_subscribe_button">
+              Subscribe
+            </button>
+            <span class="ck_guarantee">
+              We won't send you spam. Unsubscribe at any time.
+            </span>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 <div class="row">
@@ -178,14 +395,14 @@
                 <li><i class="fa fa-asterisk"></i>30 minute check in, reflection, questions, help</li>
               </ul>
       </div>
-         
+
     </div>
 
 
   </div>
 
    <h3 class="FAQ">FAQ</h3>
-  
+
     <h4>How much time will I get with the mentors?</h4>
 <p>While there’s no hard and fast rule, the mentors are there to give insight, encourage you in the right direction, help fix an issue that’s tripping you up etc,... but then let you get back to work. Often 5 minutes of expert time can give you the confidence or technical tip you need to push through. Beyond 5-10 minutes, if others need help, mentors would step away and then check back to see your progress.</p>
 
