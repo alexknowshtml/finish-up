@@ -19,6 +19,16 @@
   width: 569px;
   position: absolute;
 }
+
+.jumbotron p {
+  font-size: 22px;
+  font-weight: 900;
+  margin-top: 8px;
+}
+
+span.cross-out {
+  text-decoration: line-through;
+  font-weight: 300;
 }
 
 .col-lg-7 {
@@ -99,7 +109,7 @@ button {
   position: relative;
   color: white;
   text-align: center;
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/721267/bluesplash.png');
+  background: url('https://s3.amazonaws.com/whichway-images/bluesplash_small.jpg');
   background-position: bottom;
   background-size: cover;
 }
@@ -148,7 +158,7 @@ button {
 }
 
 .signup {
-    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/721267/purplesplash.png);
+    background: url(https://s3.amazonaws.com/whichway-images/purplesplash_small.jpg);
     background-position: center;
     background-size: cover;
     color: white;
@@ -178,7 +188,17 @@ button {
     .jumbotron h3 {
     font-size: 18px;
       display: block;
-      margin-bottom: 30px;
+      margin-top: 25px;
+
+}
+
+.jumbotron p{
+  margin-bottom: 35px;
+}
+
+.jumbotron-button {
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 
@@ -342,3 +362,20 @@ li i {margin-right: 5px; }
   margin: 10px 0;
 }
 
+h2.price {
+  font-family: Candal;
+  text-align: center;
+}
+
+.pricing .jumbotron-button {
+  display: block;
+  margin: 30px auto 30px auto;
+  width: 200px;
+  text-align: center;
+}
+
+.jumbotron-button:hover {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
