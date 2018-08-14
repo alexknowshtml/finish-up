@@ -170,6 +170,7 @@ button {
   width: calc(33% - 60px);
   margin: 20px;
   display: inline-block;
+  vertical-align: top;
 }
 
 @media screen and (max-width: 991px) {
