@@ -88,6 +88,7 @@ button {
   border: none;
   background: #fff;
   padding: 0px 10px;
+  text-align: center;
   border-radius: 5px;
   transition: all .4s;
   text-decoration: none;
@@ -171,6 +172,17 @@ button {
   margin: 20px;
   display: inline-block;
   vertical-align: top;
+}
+
+@media screen and (max-width: 500px) {
+  .nav-links a {
+    display: block;
+    font-size: 16px;
+  }
+
+  .nav-button {
+    padding: 5px 10px !important;
+  }
 }
 
 @media screen and (max-width: 991px) {
