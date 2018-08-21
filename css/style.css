@@ -168,8 +168,8 @@ button {
 }
 
 .mentor-wrapper {
-  width: calc(33% - 60px);
-  margin: 20px;
+  width: calc(33% - 15px);
+  margin: 5px;
   display: inline-block;
   vertical-align: top;
 }
@@ -279,7 +279,7 @@ button {
   border-radius: 3px;
   text-align: center;
   left: 0;
-  bottom: 20px;
+  bottom: -23px;
   right: 0;
   margin: auto
 }
@@ -287,6 +287,7 @@ button {
 .mentor-wrapper p {
   width: 80%;
   margin: 0 auto;
+  margin-top: 45px;
 }
 
 .mentor {
