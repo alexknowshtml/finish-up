@@ -393,3 +393,16 @@ h2.price {
   cursor: pointer;
   text-decoration: none;
 }
+
+@keyframes animatedBackground {
+  from { background-position: 0 0 }
+  to { background-position: -562px 0 }
+}
+
+.photoScroll {
+  height: 190px;
+  background-size: cover;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/721267/SlidingShow.jpg');
+  animation: animatedBackground 30s linear infinite;
+  animation-direction: alternate;
+}
