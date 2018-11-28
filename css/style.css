@@ -248,10 +248,15 @@ button {
   }
 
   .mentor-wrapper {
-  width: calc(100% - 60px);
-  margin: 30px;
+  width: 100%;
+  margin: 0px;
   display: inline-block;
 }
+.mentor-wrapper.past-mentor {
+  width: calc(100% - 20px);
+  margin: 0;
+  display: inline-block;
+  }
 
   .jumbotron img {
     position: absolute;
@@ -405,4 +410,32 @@ h2.price {
   background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/721267/SlidingShow.jpg');
   animation: animatedBackground 30s linear infinite;
   animation-direction: alternate;
+}
+
+
+.past-mentor .mentor {
+    border-radius: 50%;
+    padding: 20px;
+    width: 50%;
+    display: inline-block;
+}
+
+.past-mentor .name {
+  float: right;
+  width: 50%;
+  margin-top: 44px;
+}
+
+.past-mentor .title {
+  font-size: 14px;
+  font-weight: 300;
+  width: 100%;
+  margin-top: 5px;
+  line-height: 16px;
+}
+
+#list {
+  margin-top: -100px;        /* Size of fixed header */
+  padding-bottom: 100px;
+  display: block;
 }
